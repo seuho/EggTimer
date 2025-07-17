@@ -3,16 +3,41 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Cross-platform egg timer desktop app",
+  "author": "Yashasvi Pamu",
   "devDependencies": {
-    "electron": "^37.0.0"
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
     "@electron/remote": "^2.1.3"
+  },
+  "build": {
+    "appId": "com.hexanoircodeworks.eggtimer",
+    "mac": {
+      "target": "dmg",
+      "identity": null,
+      "icon": "assets/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   }
 }
