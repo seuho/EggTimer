@@ -1,0 +1,26 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_14_142)">
+<path d="M41.5 20C41.5 28.8366 33.9448 36 24.625 36C15.3052 36 7.75 28.8366 7.75 20C7.75 11.1634 15.3052 4 24.625 4C33.9448 4 41.5 11.1634 41.5 20Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M17.75 18.6667C17.75 23.0849 14.672 26.6667 10.875 26.6667C7.07804 26.6667 4 23.0849 4 18.6667C4 14.2484 7.07804 10.6667 10.875 10.6667C14.672 10.6667 17.75 14.2484 17.75 18.6667Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M32.75 32.6667C32.75 36.7168 29.3921 40 25.25 40C21.1079 40 17.75 36.7168 17.75 32.6667C17.75 28.6166 21.1079 25.3333 25.25 25.3333C29.3921 25.3333 32.75 28.6166 32.75 32.6667Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M41.5 26.6667C41.5 32.5577 37.3027 37.3333 32.125 37.3333C26.9473 37.3333 22.75 32.5577 22.75 26.6667C22.75 20.7756 26.9473 16 32.125 16C37.3027 16 41.5 20.7756 41.5 26.6667Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M21.5 27.3333C21.5 31.3834 18.422 34.6667 14.625 34.6667C10.828 34.6667 7.75 31.3834 7.75 27.3333C7.75 23.2832 10.828 20 14.625 20C18.422 20 21.5 23.2832 21.5 27.3333Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M44 20C44 24.4183 40.6421 28 36.5 28C32.3579 28 29 24.4183 29 20C29 15.5817 32.3579 12 36.5 12C40.6421 12 44 15.5817 44 20Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M41.5 12.6667C41.5 17.4531 37.3027 21.3333 32.125 21.3333C26.9473 21.3333 22.75 17.4531 22.75 12.6667C22.75 7.8802 26.9473 4 32.125 4C37.3027 4 41.5 7.8802 41.5 12.6667Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M34 8C34 12.4183 30.0825 16 25.25 16C20.4175 16 16.5 12.4183 16.5 8C16.5 3.58172 20.4175 0 25.25 0C30.0825 0 34 3.58172 34 8Z" fill="white" shape-rendering="crispEdges"/>
+<path d="M32.75 20.6667C32.75 24.7168 29.3921 28 25.25 28C21.1079 28 17.75 24.7168 17.75 20.6667C17.75 16.6166 21.1079 13.3333 25.25 13.3333C29.3921 13.3333 32.75 16.6166 32.75 20.6667Z" fill="#FFC107" shape-rendering="crispEdges"/>
+<path d="M32.75 20.6667C32.75 25.4531 29.1123 29.3333 24.625 29.3333C20.1377 29.3333 16.5 25.4531 16.5 20.6667C16.5 15.8802 20.1377 12 24.625 12C29.1123 12 32.75 15.8802 32.75 20.6667Z" fill="white" fill-opacity="0.7" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_d_14_142" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_142"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_142" result="shape"/>
+</filter>
+</defs>
+</svg>

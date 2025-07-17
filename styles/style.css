@@ -1,0 +1,327 @@
+/* Ensure html and body take up the full viewport dimensions */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #F9F521;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.app-frame {
+    width: 504px;
+    height: 544px;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-header {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-app-region: drag;
+}
+
+.window-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-app-region: no-drag;
+    color: #FF8C00;
+    /* So the text is clickable/selectable */
+}
+
+.window-controls {
+    display: flex;
+    gap: 10px;
+    height: 35px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -webkit-app-region: no-drag;
+}
+
+.icon-btn {
+    width: 32px;
+    height: 32px;
+}
+
+#back-btn {
+    cursor: pointer;
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.base {
+    width: 495px;
+    height: 500px;
+    border: 3px solid #FFA500;
+    background-color: #F4FB7D;
+    border-radius: 10px;
+}
+
+.block {
+    width: 475px;
+    height: 475px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filled-block {
+    width: 455px;
+    height: 460px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #FF8C00;
+}
+
+.horizontal-block {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 235px;
+}
+
+.card {
+    background-color: #FF8C00;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.egg-icon {
+    width: 90px;
+    height: 100px;
+}
+
+.poached-egg-icon {
+    width: 130px;
+    height: 90px;
+    padding-top: 10px;
+}
+
+.timer {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-name {
+    color: white;
+    font-size: 30px;
+}
+
+.card-title {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.animation-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.egg-animation {
+    width: 100px;   
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.timer-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #FF8C00;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.timer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timer-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+
+.clouds {
+    z-index: 0;
+}
+
+.text {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.intro-text {
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 12px 30px;
+    border: 3px solid #FF8C00;
+    border-radius: 8px;
+    font-size: 2.2em;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    margin: 0;
+}
+
+.start-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.start-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+#back-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.cloud {
+    position: absolute;
+    /* Position clouds relative to the .block */
+    width: 200px;
+    /* Adjust cloud size relative to viewport width */
+    max-width: 300px;
+    /* Max size for larger screens */
+    /* Ensure pixelated rendering if the image itself isn't perfectly pixelated */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.2));
+    /* Simple pixel shadow */
+    z-index: 0;
+}
+
+/* Specific Cloud Positions (adjust these values to match your Figma layout) */
+.cloud-1 {
+    top: 10%;
+    left: 10%;
+}
+
+.cloud-2 {
+    top: 9%;
+    left: 30%;
+    width: 120px;
+}
+
+/* Smaller cloud */
+.cloud-3 {
+    top: 10%;
+    right: 10%;
+    width: 230px;
+}
+
+.cloud-4 {
+    top: 35%;
+    left: 15%;
+    width: 260px;
+}
+
+.cloud-5 {
+    top: 30%;
+    left: 45%;
+    width: 190px;
+}
+
+/* Example additional cloud */
+.cloud-6 {
+    top: 48%;
+    right: 8%;
+}
+
+.cloud-7 {
+    bottom: 30%;
+    left: 9%;
+    width: 220px;
+}
+
+/* Smaller cloud */
+.cloud-8 {
+    bottom: 25%;
+    left: 45%;
+    width: 140px;
+}
+
+.cloud-9 {
+    bottom: 10%;
+    right: 10%;
+    width: 160px;
+}
+
+.cloud-10 {
+    bottom: 9%;
+    left: 15%;
+    width: 200px;
+}
