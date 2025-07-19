@@ -13,9 +13,12 @@ function createWindow() {
     height: 600,
     frame: false,
     useContentSize: true,
+    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
+      sandbox: false, 
+      nodeIntegration: false
     },
   });
 
@@ -34,6 +37,27 @@ ipcMain.on('close-window', () => {
 ipcMain.on('minimize-window', () => {
   BrowserWindow.getFocusedWindow().minimize();
 });
+
+ipcMain.handle('get-asset-path', (event, relativePath) => {
+  const fs = require('fs');
+  const isDev = !app.isPackaged;
+
+  const basePath = isDev
+    ? path.join(__dirname, 'assets')
+    : path.join(process.resourcesPath, 'assets');
+
+  const resolvedPath = path.join(basePath, relativePath);
+
+  const logPath = path.join(app.getPath('userData'), 'eggtimer-log.txt');
+  fs.appendFileSync(logPath, `Resolved asset path: ${resolvedPath}\n`);
+
+  if (!fs.existsSync(resolvedPath)) {
+    fs.appendFileSync(logPath, `⚠️ Missing file: ${relativePath}\n`);
+  }
+
+  return `file://${resolvedPath}`;
+});
+
 
 // ✅ Restore window and bring it to front when alarm rings
 ipcMain.on('restore-window', () => {

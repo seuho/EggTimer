@@ -15,7 +15,8 @@
     "electron-builder": "^26.0.12"
   },
   "dependencies": {
-    "@electron/remote": "^2.1.3"
+    "@electron/remote": "^2.1.3",
+    "electron-is-dev": "^3.0.1"
   },
   "build": {
     "appId": "com.hexanoircodeworks.eggtimer",
@@ -35,6 +36,15 @@
     },
     "files": [
       "**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets",
+        "to": "assets"
+      }
+    ],
+    "asarUnpack": [
+      "assets/**"
     ],
     "directories": {
       "buildResources": "assets"
