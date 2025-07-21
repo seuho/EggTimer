@@ -31,12 +31,15 @@ app.whenReady().then(() => {
 });
 
 ipcMain.on('close-window', () => {
-  BrowserWindow.getFocusedWindow().close();
+  const win = BrowserWindow.getFocusedWindow() || mainWindow;
+  if (win) win.close();
 });
 
 ipcMain.on('minimize-window', () => {
-  BrowserWindow.getFocusedWindow().minimize();
+  const win = BrowserWindow.getFocusedWindow() || mainWindow;
+  if (win) win.minimize();
 });
+
 
 ipcMain.handle('get-asset-path', (event, relativePath) => {
   const fs = require('fs');
